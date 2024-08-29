@@ -34,8 +34,10 @@
 ...
 
 ## Autenticação com Token (JWT)
+O token é uma espécie de certificado digital que serve para identificar, autenticar e autorizar o compartilhamento de informações entre partes de maneira segura. 
 JWT, resumidamente, é um string de caracters que, caso o cliente e o server estejam sobre HTTPS, permie que somente o server tenha a senha que permita autenticar o usuário. o token não é criptografado, ele é "assinado", de forma que só com a senha a assinatura possa ser comprovada, o que impede que token sejam criados por conta própria.
 Em prática, quando o usuário se autentica no sistema ou web API(com usuário e senha), o server gera um token com uma data de expiração para ele. Durante as requisiçoẽs do usuário, o JWT é enviado no cabeçalho da requisição e, caso seja válido, a API dará o acesso aos recurso solicitados, sem a necessidade de se autenticar novamente.
+O conteúdo do JWT é um payload JSON que pode conter qualquer informação, que pode permitir mais tarde a conceder determinados recursos para determinados usuários. Ele terá no mínimo, o ID do usuário autenticado, mas ele pode conterm uito mais do que isso, conforme a sua necessidade, emboraguardar infprmaçeẽs mais pesoais no sei interior não seja recomendado, pois comentado antes, ele não é criptografado.
 
 
 ...
