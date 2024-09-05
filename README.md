@@ -42,6 +42,4 @@ O conteúdo do JWT é um payload JSON que pode conter qualquer informação, que
 
 ...
 
-## Projeto (Objeto de Estudos)
 
-...
